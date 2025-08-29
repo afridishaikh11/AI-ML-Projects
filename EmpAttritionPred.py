@@ -25,6 +25,9 @@ model.fit(X_train, y_train)
 # Predictions
 y_pred = model.predict(X_test)
 
+print("Prediction:", y_pred[:10])
+print("Actual:", y_test.values[:10])
+
 # Evaluation
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
